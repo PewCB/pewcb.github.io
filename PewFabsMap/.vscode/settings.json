@@ -1,0 +1,15 @@
+{
+  "files.associations": {
+    "*.svg": "html"
+  },
+  "[json][jsonc]": {
+    "editor.colorDecorators": true,
+    "editor.defaultColorDecorators": "always",
+    "editor.colorDecoratorsActivatedOn": "clickAndHover"
+  },
+  "[html][xml][svg]": {
+    "editor.colorDecorators": true,
+    "editor.defaultColorDecorators": "always",
+    "editor.colorDecoratorsActivatedOn": "clickAndHover"
+  }
+}

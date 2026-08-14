@@ -1,0 +1,99 @@
+.maplibregl-popup {
+    max-width: min(320px, calc(100vw - 32px)) !important;
+}
+
+.maplibregl-popup-content {
+    min-width: 240px;
+    padding: 0;
+    overflow: hidden;
+    /* border: 1px solid rgba(32, 33, 36, 0.1); */
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: 0 8px 24px rgba(32, 33, 36, 0.18);
+}
+
+
+.maplibregl-popup-tip {
+    filter: drop-shadow(0 2px 1px rgba(32, 33, 36, 0.12));
+}
+
+.pfm-popup {
+    padding: 20px;
+    color: #202124;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.pfm-popup h1 {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+    font-weight: 650;
+    line-height: 1.25;
+}
+
+.pfm-popup p {
+    margin: 0;
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+.pfm-popup #links {
+    display: grid;
+    margin: 8px -8px -8px;
+    padding-top: 4px;
+    border-top: 1px solid #e8eaed;
+}
+
+.pfm-popup-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    color: #1967d2;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.3;
+    text-decoration: none;
+}
+
+.pfm-popup-link:hover {
+    background: #f1f5fb;
+}
+
+.pfm-popup-link:focus-visible {
+    outline: 2px solid #1a73e8;
+    outline-offset: -2px;
+}
+
+.pfm-popup-link-icon {
+    width: 18px;
+    flex: 0 0 18px;
+    color: #5f6368;
+    font-size: 16px;
+    text-align: center;
+}
+
+.pfm-popup-link-text {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.pfm-popup-coming-soon {
+    color: #ffffff;
+    margin: -1px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.0;
+    background: #4f4f4f;
+    padding: 10px 8px;
+    text-align: center;
+}
+
+
+@media (max-width: 420px) {
+    .maplibregl-popup-content {
+        min-width: min(240px, calc(100vw - 32px));
+    }
+}
+

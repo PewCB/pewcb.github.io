@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Antilatency",
+        "description": "Antilatency is a company that specializes in developing low-latency tracking solutions for virtual reality (VR) and augmented reality (AR) applications. Their technology aims to provide precise and responsive tracking for immersive experiences.",
+        "links": [
+            {
+                "url": "https://antilatency.com/",
+                "text": "antilatency.com"
+            },
+            {
+                "icon": "facebook",
+                "url": "https://www.facebook.com/antilatency",
+                "text": "Facebook"
+            },
+            {
+                "icon": "google",
+                "url": "https://maps.app.goo.gl/4USrf5R2GSW2A7h38",
+                "text": "Google Maps"
+            }
+
+        ],
+        "locationLatLng": [34.68673327124357, 33.03556064114717]
+    },
+    {
+        "title": "San Francisco Fab",
+        "commingSoon": true,
+        "description": "San Francisco Fab is a community-driven fabrication lab located in San Francisco, offering access to various tools and resources for makers.",
+        "links": [
+            {
+                "url": "https://sffab.com/",
+                "text": "Official Website"
+            }
+        ],
+        "locationLatLng": [37.774929, -122.419416]
+    }
+
+]
