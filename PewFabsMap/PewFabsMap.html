@@ -4,28 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#f7f7f4">
-    <title>PewFab Map</title>
+    <title>PewFabs Map</title>
     <script src="Popup.js"></script>
-
-
     <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.7.1/dist/maplibre-gl.css">
     <link rel="stylesheet" href="Popup.css">
     <style>
-        :root {
-            color-scheme: light;
-            font-family: "Segoe UI", sans-serif;
-            color: #202124;
-            background: #e8eaed;
-        }
-
         * {
             box-sizing: border-box;
         }
 
         html,
         body,
-        main,
         #map {
             width: 100%;
             height: 100%;
@@ -35,93 +25,12 @@
         body {
             overflow: hidden;
         }
-
-        .search {
-            position: fixed;
-            z-index: 1;
-            top: 16px;
-            left: 50%;
-            display: flex;
-            width: min(440px, calc(100% - 32px));
-            height: 48px;
-            padding: 4px 4px 4px 16px;
-            transform: translateX(-50%);
-            border: 1px solid rgba(32, 33, 36, 0.12);
-            border-radius: 8px;
-            background: #ffffff;
-            box-shadow: 0 2px 8px rgba(32, 33, 36, 0.18);
-        }
-
-        .search:focus-within {
-            border-color: #1a73e8;
-            box-shadow: 0 2px 10px rgba(26, 115, 232, 0.24);
-        }
-
-        .search input {
-            min-width: 0;
-            flex: 1;
-            border: 0;
-            outline: 0;
-            font: inherit;
-            font-size: 15px;
-            color: inherit;
-            background: transparent;
-        }
-
-        .search button {
-            display: grid;
-            width: 40px;
-            height: 40px;
-            flex: 0 0 40px;
-            place-items: center;
-            border: 0;
-            border-radius: 6px;
-            color: #ffffff;
-            background: #1a73e8;
-            cursor: pointer;
-        }
-
-        .search button:hover {
-            background: #1765cc;
-        }
-
-        .search button:focus-visible {
-            outline: 3px solid rgba(26, 115, 232, 0.3);
-            outline-offset: 2px;
-        }
-
-        .search svg {
-            width: 19px;
-            height: 19px;
-            fill: none;
-            stroke: currentColor;
-            stroke-linecap: round;
-            stroke-width: 2;
-        }
     </style>
 </head>
 <body>
-    <main>
-        <form class="search" id="map-search" role="search">
-            <input
-                id="location"
-                name="location"
-                type="search"
-                value="Limassol"
-                placeholder="Search a place"
-                aria-label="Search a place on the map"
-                autocomplete="off"
-            >
-            <button type="submit" aria-label="Search">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <circle cx="11" cy="11" r="7"></circle>
-                    <path d="m20 20-4-4"></path>
-                </svg>
-            </button>
-        </form>
 
-        <div id="map" role="application" aria-label="Map of PewFab locations"></div>
-    </main>
+    <div id="map" role="application" aria-label="Map of PewFab locations"></div>
+
 
     <script src="https://unpkg.com/maplibre-gl@5.7.1/dist/maplibre-gl.js"></script>
     
@@ -138,8 +47,6 @@
             markerElement.className = "marker";
             markerElement.style.width = window.markerSize + "px";
             markerElement.style.height = window.markerSize + "px";
-            //markerElement.style.backgroundColor = "#1a73e8";
-            //markerElement.style.borderRadius = "50%";
             markerElement.style.cursor = "pointer";
             markerElement.src = iconUrl;
             return markerElement;
@@ -149,37 +56,13 @@
     
     
     <script>
-        const searchForm = document.querySelector("#map-search");
-        const locationInput = document.querySelector("#location");
-
-
         const map = new maplibregl.Map({
             container: "map",
             zoom: 12,
             maxZoom: 19,
             style: "./MapStyle.json",
-            //style: 'https://demotiles.maplibre.org/style.json',
-            /*style: {
-                version: 8,
-                sources: {
-                    openStreetMap: {
-                        type: "raster",
-                        tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
-                        
-                        tileSize: 256,
-                        maxzoom: 19,
-                        //attribution: "&copy; OpenStreetMap contributors"
-                    }
-                },
-                layers: [
-                    {
-                        id: "openStreetMap",
-                        type: "raster",
-                        source: "openStreetMap"
-                    }
-                ]
-            }*/
         });
+        
         map.dragRotate.disable();
         map.keyboard.disable();
         map.touchZoomRotate.disableRotation();
@@ -239,59 +122,6 @@
             .catch((error) => {
                 console.error(error);
             });
-
-
-
-        searchForm.addEventListener("submit", (event) => {
-            event.preventDefault();
-
-            const location = locationInput.value.trim();
-            if (!location) {
-                locationInput.focus();
-                return;
-            }
-
-            const searchUrl = new URL("https://nominatim.openstreetmap.org/search");
-            searchUrl.search = new URLSearchParams({
-                q: location,
-                format: "jsonv2",
-                limit: "1"
-            });
-
-            fetch(searchUrl, {
-                headers: { "Accept-Language": navigator.language }
-            })
-                .then((response) => {
-                    if (!response.ok) {
-                        throw new Error("Search request failed");
-                    }
-
-                    return response.json();
-                })
-                .then(([result]) => {
-                    if (!result) {
-                        throw new Error("Location not found");
-                    }
-
-                    const bounds = result.boundingbox;
-                    locationInput.setCustomValidity("");
-                    map.fitBounds([
-                        [Number(bounds[2]), Number(bounds[0])],
-                        [Number(bounds[3]), Number(bounds[1])]
-                    ], {
-                        padding: 64,
-                        maxZoom: 15
-                    });
-                })
-                .catch(() => {
-                    locationInput.setCustomValidity("Location not found");
-                    locationInput.reportValidity();
-                });
-        });
-
-        locationInput.addEventListener("input", () => {
-            locationInput.setCustomValidity("");
-        });
     </script>
 </body>
 </html>
