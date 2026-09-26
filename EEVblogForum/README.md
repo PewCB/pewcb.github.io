@@ -1,4 +1,19 @@
 
 
 ![](FirstPrint2021_Combined.jpg)
-[FirstPrint2021_Combined.jpg](https://pewcb.github.io/EEVblogForum/FirstPrint2021_Combined.jpg)
+[FirstPrint2021_Combined.jpg](https://pewcb.github.io/EEVblogForum/FirstPrint2021_Combined.jpg)![alt text]
+
+
+![](PewCB_ClimateSensor_CloseUp_Components_01.jpg)
+[PewCB_ClimateSensor_CloseUp_Components_01.jpg](https://pewcb.github.io/EEVblogForum/PewCB_ClimateSensor_CloseUp_Components_01.jpg)
+![](PewCB_ClimateSensor_CloseUp_Components_02.jpg)
+[PewCB_ClimateSensor_CloseUp_Components_02.jpg](https://pewcb.github.io/EEVblogForum/PewCB_ClimateSensor_CloseUp_Components_02.jpg)
+![](PewCB_ClimateSensor_CloseUp_Components_03.jpg)
+[PewCB_ClimateSensor_CloseUp_Components_03.jpg](https://pewcb.github.io/EEVblogForum/PewCB_ClimateSensor_CloseUp_Components_03.jpg)
+
+
+## Cutting through ceramic!
+![PewCB_CuttingThroughCeramic_01](PewCB_CuttingThroughCeramic_01.JPG)
+[PewCB_CuttingThroughCeramic_01](https://pewcb.github.io/EEVblogForum/PewCB_CuttingThroughCeramic_01.JPG)
+![PewCB_CuttingThroughCeramic_02](PewCB_CuttingThroughCeramic_02.JPG)
+[PewCB_CuttingThroughCeramic_02](https://pewcb.github.io/EEVblogForum/PewCB_CuttingThroughCeramic_02.JPG)
