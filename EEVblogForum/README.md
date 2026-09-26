@@ -13,5 +13,5 @@
 
 
 ## Cutting through ceramic!
-![PewCB_CuttingThroughCeramic_00](PewCB_CuttingThroughCeramic_00.JPG)
-[PewCB_CuttingThroughCeramic_00](https://pewcb.github.io/EEVblogForum/PewCB_CuttingThroughCeramic_00.JPG)
+![PewCB_CuttingThroughCeramic_00](PewCB_CuttingThroughCeramic_00.jpg)
+[PewCB_CuttingThroughCeramic_00](https://pewcb.github.io/EEVblogForum/PewCB_CuttingThroughCeramic_00.jpg)
