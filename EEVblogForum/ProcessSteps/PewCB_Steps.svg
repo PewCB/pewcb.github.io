@@ -2,8 +2,8 @@
 	<style>
 		image { opacity: 0; animation: slide 18s linear infinite; }
 		@keyframes slide {
-			0%, 5.555% { opacity: 1; }
-			5.556%, 100% { opacity: 0; }
+			0%, 6% { opacity: 1; }
+			6.5%, 100% { opacity: 0; }
 		}
 	</style>
 	<!-- 0001.png -->
