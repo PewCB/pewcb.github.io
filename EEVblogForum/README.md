@@ -15,3 +15,27 @@
 ## Cutting through ceramic!
 ![PewCB_CuttingThroughCeramic_00](PewCB_CuttingThroughCeramic_00.jpg)
 [PewCB_CuttingThroughCeramic_00](https://pewcb.github.io/EEVblogForum/PewCB_CuttingThroughCeramic_00.jpg)
+
+![](PewCB_MountingPins.jpg)
+[PewCB_MountingPins.jpg](https://pewcb.github.io/EEVblogForum/PewCB_MountingPins.jpg)
+
+![](PewCB_PreFabricatedVias.jpg)
+[PewCB_PreFabricatedVias.jpg](https://pewcb.github.io/EEVblogForum/PewCB_PreFabricatedVias.jpg)
+
+## TinyParts
+![](PewCB_TinyParts_Assembled_01.jpg)
+[PewCB_TinyParts_Assembled_01.jpg](https://pewcb.github.io/EEVblogForum/PewCB_TinyParts_Assembled_01.jpg)
+
+![](PewCB_TinyParts_Assembled_02.jpg)
+[PewCB_TinyParts_Assembled_02.jpg](https://pewcb.github.io/EEVblogForum/PewCB_TinyParts_Assembled_02.jpg)
+
+![](PewCB_TinyParts_Paste.jpg)
+[PewCB_TinyParts_Paste.jpg](https://pewcb.github.io/EEVblogForum/PewCB_TinyParts_Paste.jpg)
+
+![](PewCB_TinyParts_PCB.jpg)
+[PewCB_TinyParts_PCB.jpg](https://pewcb.github.io/EEVblogForum/PewCB_TinyParts_PCB.jpg)
+
+![](PewCB_TinyParts_Stencil.jpg)
+[PewCB_TinyParts_Stencil.jpg](https://pewcb.github.io/EEVblogForum/PewCB_TinyParts_Stencil.jpg)
+
+
